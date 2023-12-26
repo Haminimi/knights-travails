@@ -24,4 +24,10 @@ class Graph {
 			this.vertices.get(key2).push(key1);
 		}
 	}
+
+	printGraph() {
+		for (const [vertex, edges] of this.vertices) {
+			console.log(`${vertex} -> ${edges.join(', ')}`);
+		}
+	}
 }
