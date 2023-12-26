@@ -73,3 +73,12 @@ class Graph {
 		}
 	}
 }
+
+const chessboard = new Graph();
+function initialize() {
+	chessboard.addSquares();
+	chessboard.generateKnightEdges();
+	chessboard.printGraph();
+}
+
+initialize();
