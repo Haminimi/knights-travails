@@ -34,7 +34,33 @@ class Graph {
 	addSquares() {
 		for (let i = 0; i < 8; i++) {
 			for (let j = 0; j < 8; j++) {
-				chessboard.addVertex([i, j]);
+				this.addVertex([i, j]);
+			}
+		}
+	}
+
+	addKnightEdge(square) {
+		const knightMovesArray = [
+			[1, 2],
+			[2, 1],
+			[-1, -2],
+			[-2, -1],
+			[-1, 2],
+			[-2, 1],
+			[1, -2],
+			[2, -1],
+		];
+
+		for (const move of knightMovesArray) {
+			const newSquare = [square[0] + move[0], square[1] + move[1]];
+
+			if (
+				newSquare[0] >= 0 &&
+				newSquare[0] < 8 &&
+				newSquare[1] >= 0 &&
+				newSquare[1] < 8
+			) {
+				this.addEdge(square, newSquare);
 			}
 		}
 	}
