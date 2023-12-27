@@ -81,13 +81,8 @@ class Graph {
 
 		while (queue.length > 0) {
 			const [currentSquare, path] = queue.shift();
-			/* console.log(path); */
+
 			if (currentSquare === target) {
-				const transformedPath = [];
-				path.forEach((square) => {
-					square = square.split(',').map(Number);
-					transformedPath.push(square);
-				});
 				const resultMessage = `You made it in ${
 					path.length - 1
 				} moves. Here is your path:`;
