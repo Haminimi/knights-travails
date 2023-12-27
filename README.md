@@ -17,6 +17,7 @@ and you will get an output like this one:
 - [ ] **Add more game pieces**
 ## Tech
 **The project is built with:**
+- HTML
 - Vanilla JavaScript
 
 **Tools**
