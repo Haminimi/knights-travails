@@ -72,6 +72,38 @@ class Graph {
 			}
 		}
 	}
+
+	knightMoves(current, target) {
+		current = current.toString();
+		target = target.toString();
+		const visited = new Set();
+		const queue = [[current, [current]]];
+
+		while (queue.length > 0) {
+			const [currentSquare, path] = queue.shift();
+			/* console.log(path); */
+			if (currentSquare === target) {
+				const transformedPath = [];
+				path.forEach((square) => {
+					square = square.split(',').map(Number);
+					transformedPath.push(square);
+				});
+				const resultMessage = `You made it in ${
+					path.length - 1
+				} moves. Here is your path:`;
+				console.log(resultMessage);
+				return path;
+			}
+
+			if (!visited.has(currentSquare)) {
+				visited.add(currentSquare);
+				const options = this.vertices.get(currentSquare);
+				options.forEach((option) => {
+					queue.push([option, path.concat(option)]);
+				});
+			}
+		}
+	}
 }
 
 const chessboard = new Graph();
@@ -82,3 +114,4 @@ function initialize() {
 }
 
 initialize();
+console.log(chessboard.knightMoves([0, 0], [7, 7]));
