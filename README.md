@@ -21,8 +21,8 @@ and you will get an output like this one:
 - Vanilla JavaScript
 
 **Tools**
-- Git
 - Visual Studio Code
+- Git
 ## Covered Topics
 **This section mentions the main topics covered during project work and prior lessons**
 - Algorithms and Data Structures
@@ -39,5 +39,4 @@ The project is a great foundation for the Chess game project.
 - [Exercism](https://exercism.org/profiles/Haminimi)
 - [LeetCode](https://leetcode.com/Haminimi/)
 - Email: haminimi.dev@gmail.com
-- LinkedIn: A profile will be available at the time I am job ready
 ## Happy coding!
