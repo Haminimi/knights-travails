@@ -34,9 +34,4 @@ and you will get an output like this one:
 The project is a great foundation for the Chess game project.
 ## Credits
 - Icon used for the favicon image is one of the [Hierarchy icons created by Freepik - Flaticon](https://www.flaticon.com/free-icons/hierarchy).
-## Author
-- [GitHub](https://github.com/Haminimi)
-- [Exercism](https://exercism.org/profiles/Haminimi)
-- [LeetCode](https://leetcode.com/Haminimi/)
-- Email: haminimi.dev@gmail.com
 ## Happy coding!
